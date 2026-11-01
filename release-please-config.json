@@ -6,7 +6,10 @@
       "bump-minor-pre-major": true,
       "draft": true,
       "force-tag-creation": true,
-      "extra-files": ["project.yml"]
+      "extra-files": [
+        "project.yml"
+      ],
+      "initial-version": "0.1.0"
     }
   }
 }

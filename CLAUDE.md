@@ -6,10 +6,10 @@
 - Ask before adding any dependency.
 
 ## Code
-- Swift, Apple API Design Guidelines. Logic in the `Core` package, UI thin.
+- Swift, Apple API Design Guidelines. Logic in the core package (`Core/` or `Packages/<Name>Core/`), UI thin.
 - No comments unless the why is non-obvious. No docs unless asked.
-- Tests for logic changes only. Run `swift test --package-path Core` before pushing.
-- `swiftformat` and `swiftlint` decide style; don't debate it.
+- Tests for logic changes only. Run `swift test --package-path <core package>` before pushing.
+- `swift format` with `.swift-format` decides style; run `swift format -i -r` on changed files.
 
 ## Git
 - Branch `<type>/<issue>-<slug>`. One PR per issue.

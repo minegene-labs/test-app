@@ -1,1 +1,1 @@
-public let greeting = "Hello"
+public let greeting = "Hi"

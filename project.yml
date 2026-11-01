@@ -1,0 +1,23 @@
+name: Starter
+options:
+  bundleIdPrefix: com.minegene-labs
+  deploymentTarget:
+    macOS: "15.0"
+packages:
+  Core:
+    path: Core
+targets:
+  Starter:
+    type: application
+    platform: macOS
+    sources: [App]
+    dependencies:
+      - package: Core
+    settings:
+      base:
+        MARKETING_VERSION: 0.0.0 # x-release-please-version
+        GENERATE_INFOPLIST_FILE: YES
+        CODE_SIGN_IDENTITY: "-"
+        CODE_SIGN_STYLE: Manual
+        ENABLE_HARDENED_RUNTIME: YES
+        SWIFT_VERSION: "6.0"

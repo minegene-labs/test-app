@@ -1,0 +1,10 @@
+group:
+  - files:
+      - SECURITY.md
+      - .github/pull_request_template.md
+      - source: .github/ISSUE_TEMPLATE/
+        dest: .github/ISSUE_TEMPLATE/
+      - .github/workflows/pr.yml
+      - .github/workflows/scorecard.yml
+    repos: |
+      minegene-labs/workflows
